@@ -22,8 +22,8 @@ jobs:
     steps:
       - uses: pnpm/action-setup@v2
         with:
-          version: 6.0.2
-          
+          version: 6.32.9
+
       - name: Checkout repository
         uses: actions/checkout@v3
 
