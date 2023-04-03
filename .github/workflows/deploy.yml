@@ -43,7 +43,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: builded-lr
-          path: lr/dist
+          path: dist
 
   deploy-lr:
     name: Deploy LR
@@ -55,11 +55,11 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: builded-lr
-          path: lr/dist
+          path: dist
 
       - name: Deploy to pages
         uses: peaceiris/actions-gh-pages@v3
         with: 
-          publish_dir: lr/dist
+          publish_dir: dist
           destination_dir: ./lr2
          
